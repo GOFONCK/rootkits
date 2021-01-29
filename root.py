@@ -1,7 +1,6 @@
 import os
 import time                                             
 import random
-from termcolor import colored, cprint
 
 print("Ключ аккаунта")
 rootkits = int(input())-4000
@@ -17,9 +16,9 @@ if(skid > rootkits or rootkits < 0 or rootkits > 200):
 i = 0
 speed = 25
 
-cprint('Сканирование...', 'green', 'on_blue')
+print('Сканирование...', 'green', 'on_blue')
 time.sleep(4)
-cprint('Компютер был распознан, начинается удаление возможных руткитов!', 'white', 'on_blue')
+print('Компютер был распознан, начинается удаление возможных руткитов!', 'white', 'on_blue')
 time.sleep(12)
 
 if(rootkits > 0):
@@ -28,7 +27,7 @@ if(rootkits > 0):
         if( i == 7):
             time.sleep(timeFS)
         i += 1
-        cprint("\tудаление руткитов: "+str(i)+" 0x00"+ str(random.uniform(100,999))+"\t", 'red', 'on_white')
+        print("\tудаление руткитов: "+str(i)+" 0x00"+ str(random.uniform(100,999))+"\t", 'red', 'on_white')
         time.sleep(random.uniform(speed*0.001,speed*1.20))
 
     print("-----УДАЛЕНИЕ РУТКИТОВ ЗАВЕРШЕНО!-----")
