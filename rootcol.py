@@ -32,7 +32,7 @@ if(rootkits > 0):
         time.sleep(random.uniform(speed*0.001,speed*1.20))
 
     print("-----УДАЛЕНИЕ РУТКИТОВ ЗАВЕРШЕНО!-----")
-    print("Было удалено "+str(rootkits)+" руткитов. использовано "+str(rootkits-skid)+" ключей декриптеров, у вас 3 дня для оплаты")
+    cprint("Было удалено "+str(rootkits)+" руткитов. использовано "+str(rootkits-skid)+" ключей декриптеров, у вас 3 дня для оплаты", 'white', 'on_blue')
 else:
     time.sleep(1*speed)
     print("-----УДАЛЕНИЕ РУТКИТОВ ЗАВЕРШЕНО!-----")
